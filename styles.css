@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(we.jpg) no-repeat center center/cover;
+    animation: moveBackground 10s linear infinite;
+  }
+  
+  /* Background Animation */
+  @keyframes moveBackground {
+    0% {
+      transform: scale(1.1) translateY(0);
+    }
+    50% {
+      transform: scale(1.2) translateY(-20px);
+    }
+    100% {
+      transform: scale(1.1) translateY(0);
+    }
+  }
+  
+  /* Login Form */
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  /* Message */
+  #message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+  }
+
+  #dashh1{
+    margin-top: 22%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .dash{
+    background-image: url(back.jpg);
+    background-size:contain;
+ 
+  }
+
+  body.dash {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #dashh1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #note-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  #note-area {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none; /* Disable resizing */
+  }
+  
+  
